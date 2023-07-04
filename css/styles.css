@@ -12,6 +12,52 @@
   --text-spacing: 0.02em;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+  color: var(--slate);
+  font-size: var(--text-size);
+  line-height: var(--text-height);
+  letter-spacing: var(--text-spacing);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -20,13 +66,30 @@
   list-style-type: none;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--white);
-  color: var(--slate);
-  font-size: var(--text-size);
-  line-height: var(--text-height);
-  letter-spacing: var(--text-spacing);
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* __________________HEADER________________ */
+.header {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+}
+
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 76px;
 }
 
 .header-logo {
@@ -37,10 +100,20 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .header-logo span {
   color: var(--navyblue);
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-item {
@@ -58,6 +131,13 @@ body {
 
 .header-contacts {
   font-style: normal;
+  gap: 40px;
+}
+
+.header-contacts-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .header-contacts-item {
@@ -65,6 +145,8 @@ body {
   font-size: var(--text-size);
   line-height: var(--text-height);
   letter-spacing: var(--text-spacing);
+  padding-right: 40px;
+  padding-top: 24px;
 }
 
 .header-contacts-item:focus,
@@ -72,17 +154,29 @@ body {
   color: var(--ocean);
 }
 
+/* __________________HERO________________ */
 .hero {
   background-color: var(--navyblue);
 }
 
+.hero-container {
+  padding: 188px;
+}
+
 .hero-title {
   color: var(--white);
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: var(--text-spacing);
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-btn {
@@ -94,6 +188,8 @@ body {
   line-height: var(--text-height);
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 .hero-btn:focus,
@@ -101,12 +197,44 @@ body {
   background-color: var(--ocean);
 }
 
+/* __________________DESCRIPTION________________ */
+
+.description {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.description-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* __________________DOING_______________ */
+
+.doing {
+  padding-bottom: 120px;
+}
+
+.doing .doing-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* __________________TEAM________________ */
+
 .team {
   background-color: var(--cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
-  background-color: var(--white);
+  display: flex;
+  gap: 24px;
+}
+
+.team-list-item {
+  width: calc((100% - 72) / 4);
 }
 
 .page-title {
@@ -117,6 +245,7 @@ body {
   line-height: 1.11;
   letter-spacing: var(--text-spacing);
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .page-subtitle {
@@ -125,10 +254,14 @@ body {
   font-weight: var(--text-weight);
   line-height: 1.2;
   letter-spacing: var(--text-spacing);
+  margin-bottom: 8px;
 }
 
+/* __________________FOOTER_______________ */
 .footer {
   background-color: var(--navyblue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-footer {
@@ -139,6 +272,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .logo-footer span {
   color: var(--cloud);
@@ -149,6 +283,7 @@ body {
   font-size: var(--text-size);
   line-height: var(--text-height);
   letter-spacing: var(--text-spacing);
+  width: 264px;
 }
 
 .filters-btn {
