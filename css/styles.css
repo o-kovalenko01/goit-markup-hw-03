@@ -74,6 +74,26 @@ img {
   margin: 0 auto;
 }
 
+.page-title {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: var(--text-spacing);
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.page-subtitle {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 1.2;
+  letter-spacing: var(--text-spacing);
+  margin-bottom: 8px;
+}
+
 /* __________________HEADER________________ */
 .header {
   padding-bottom: 24px;
@@ -187,6 +207,9 @@ img {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  min-width: 169px;
+  border: none;
+  height: 56px;
 }
 
 .hero-btn:focus,
@@ -238,28 +261,20 @@ img {
 
 .team-list-item {
   width: calc((100% - 72) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.page-title {
-  color: var(--navyblue);
+.team-item-text {
+  padding: 32px 16px;
+}
+
+.team-subtitle {
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: var(--text-spacing);
-  text-transform: capitalize;
-  margin-bottom: 72px;
 }
 
-.page-subtitle {
-  color: var(--navyblue);
-  font-size: 20px;
-  font-weight: var(--text-weight);
-  line-height: 1.2;
-  letter-spacing: var(--text-spacing);
-  margin-bottom: 8px;
+.team-text {
+  text-align: center;
 }
-
 /* __________________FOOTER_______________ */
 .footer {
   background-color: var(--navyblue);
