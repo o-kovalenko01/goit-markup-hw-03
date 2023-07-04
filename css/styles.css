@@ -89,7 +89,7 @@ img {
 
 .header-navigation {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 
 .header-logo {
@@ -100,7 +100,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  margin-right: 76px;
   display: inline-flex;
   height: 24px;
   align-items: center;
@@ -122,6 +122,8 @@ img {
   font-weight: var(--text-weight);
   line-height: var(--text-height);
   letter-spacing: var(--text-spacing);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-item:focus,
@@ -157,10 +159,8 @@ img {
 /* __________________HERO________________ */
 .hero {
   background-color: var(--navyblue);
-}
-
-.hero-container {
-  padding: 188px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -174,11 +174,6 @@ img {
   margin-bottom: 48px;
 }
 
-.hero-button {
-  display: flex;
-  justify-content: center;
-}
-
 .hero-btn {
   font-family: "Roboto", sans-serif;
   background: var(--iris);
@@ -190,6 +185,8 @@ img {
   cursor: pointer;
   padding: 16px 32px;
   border-radius: 4px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:focus,
@@ -209,17 +206,23 @@ img {
   gap: 24px;
 }
 
+.description-item {
+  width: calc((100% - 72px) / 4);
+}
 /* __________________DOING_______________ */
 
 .doing {
   padding-bottom: 120px;
 }
 
-.doing .doing-list {
+.doing-list {
   display: flex;
   gap: 24px;
 }
 
+.doing-item {
+  width: calc((100% - 48px) / 3);
+}
 /* __________________TEAM________________ */
 
 .team {
@@ -273,6 +276,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .logo-footer span {
   color: var(--cloud);
