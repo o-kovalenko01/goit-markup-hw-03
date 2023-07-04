@@ -305,6 +305,19 @@ img {
   width: 264px;
 }
 
+/* __________________FILTERS_______________ */
+
+.main-page {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filters-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .filters-btn {
   font-family: "Roboto", sans-serif;
   background: var(--cloud);
@@ -315,10 +328,26 @@ img {
   line-height: var(--text-height);
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  margin-bottom: 72px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
 }
 
 .filters-btn:hover,
 .filters-btn:focus {
   background-color: var(--ocean);
   color: var(--white);
+  border: 1px solid transparent;
+}
+
+.main-page-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.main-page-item {
+  width: calc((100% - 48px) / 3);
 }
