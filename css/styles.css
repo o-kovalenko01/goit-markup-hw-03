@@ -96,8 +96,6 @@ img {
 
 /* __________________HEADER________________ */
 .header {
-  padding-bottom: 24px;
-  padding-top: 24px;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 
@@ -144,6 +142,7 @@ img {
   letter-spacing: var(--text-spacing);
   padding-top: 24px;
   padding-bottom: 24px;
+  display: block;
 }
 
 .header-item:focus,
@@ -167,8 +166,9 @@ img {
   font-size: var(--text-size);
   line-height: var(--text-height);
   letter-spacing: var(--text-spacing);
-  padding-right: 40px;
   padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .header-contacts-item:focus,
@@ -260,8 +260,9 @@ img {
 }
 
 .team-list-item {
-  width: calc((100% - 72) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white);
 }
 
 .team-item-text {
@@ -330,7 +331,6 @@ img {
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 12px 24px;
-  margin-bottom: 72px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
 }
